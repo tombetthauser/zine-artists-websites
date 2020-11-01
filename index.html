@@ -5,11 +5,14 @@
     display: block;
     margin: 50px auto;
     padding: 50px;
+    line-height: 20px;
+    color: white;
+    background-color: black;
     /* border-left: 3px dotted black; */
     /* border-right: 3px dotted black; */
   }
 
-  .header-image {
+  /* .header-image {
     width: 250px;
     height: 250px;
     display: block;
@@ -20,23 +23,20 @@
     background-position: center;
     filter: contrast(2) saturate(0) brightness(1);
     border: 3px solid black;
-    /* box-shadow: -10px 0px 15px rgba(0,0,0,0.5); */
-  }
+    box-shadow: -10px 0px 15px rgba(0,0,0,0.5);
+  } */
 
   img {
     width: 80%;
     display: block;
     margin: auto;
+    filter: invert(1);
   }
 
   h1, h2, h3 {
-    margin-top: 30px;
     line-height: 40px;
+    margin-top: 30px;
     font-weight: 100;
-  }
-
-  p {
-    line-height: 20px;
   }
 
   a {
@@ -45,12 +45,12 @@
   }
 
   .code {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 0 0 25px 0;
     font-family: monospace;
-    padding: 25px;
-    margin-top: 40px;
     margin-bottom: 50px;
+    margin-top: 40px;
+    padding: 25px;
   }
 
   div {
@@ -148,5 +148,14 @@
   <p>
     Down towards the bottom of the page click the button that says <b>Commit changes</b> or <b>Commit new file</b>. This
     will save everything you've done!
+  </p>
+</div>
+
+<div>
+  <h2>
+    Step Five: Make it Live!
+  </h2>
+  <p>
+    Now let's make this a real life website! Go to the <b>settings</b> section of your project and find the <b>GitHub Pages</b> section down towards the bottom. Now turn it on! When the page reloads if you scroll back down to that section there should be a live clickable link.
   </p>
 </div>
