@@ -20,20 +20,6 @@
     border-right: 3px dotted white;
   }
 
-  /* .header-image {
-    width: 250px;
-    height: 250px;
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-    background-image: url('https://images.unsplash.com/photo-1547960450-2ea08b931270?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
-    background-size: cover;
-    background-position: center;
-    filter: contrast(2) saturate(0) brightness(1);
-    border: 3px solid black;
-    box-shadow: -10px 0px 15px rgba(0,0,0,0.5);
-  } */
-
   img {
     width: 80%;
     display: block;
@@ -41,9 +27,7 @@
     filter: invert(1);
   }
 
-  h1,
-  h2,
-  h3 {
+  h1, h2, h3 {
     line-height: 40px;
     margin-top: 30px;
     font-weight: 100;
@@ -97,6 +81,43 @@
         border-left: none;
         border-right: none;
       }
+  }
+
+  @media only print {
+    img {
+      filter: none;
+      max-width: 80%;
+      min-width: 80%;
+      width: 80%;
+    }
+    @page {
+      size: auto;
+      margin: 0mm;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    body {
+      max-width: 50%;
+      min-width: 50%;
+      width: 50%;
+      padding-top: 0px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-top: 100px;
+      border-left: 2px dotted black;
+      border-right: 2px dotted black;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    .code {
+      border-color: black;
+    }
+    .code-header {
+      border-color: black;
+    }
   }
 </style>
 
@@ -198,6 +219,7 @@
       will save everything you've done!
     </p>
   </div>
+
   <div>
     <h2>
       Step Five: Bring it to Life!
@@ -379,11 +401,13 @@
   </div>
 
   <div>
-    <h2>Step Nine: Add a Link!</h2>
-    <p>
-      Now let's add a link on our <b>index.html</b> page that will go to the new page we just made. Go back to your main
-      project page, click on <b>index.html</b> and update your HTML to look something like this:
-    </p>
+    <div>
+      <h2>Step Nine: Add a Link!</h2>
+      <p>
+        Now let's add a link on our <b>index.html</b> page that will go to the new page we just made. Go back to your main
+        project page, click on <b>index.html</b> and update your HTML to look something like this:
+      </p>
+    </div>
 
     <div class="code">
       <div class="code-header">
