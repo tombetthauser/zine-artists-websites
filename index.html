@@ -550,13 +550,37 @@
 
   <img src="images/windows.jpg">
 
-  <!-- <div>
+  <div>
     <h2>
       Step Twelve: Custom Website Names!
     </h2>
     <p>
-      Now you have a beautiful working website 
+      Just to be clear this part is optional, you now have a fully working website. Your working website link is available in settings under the GitHub pages section. You can email this to people, link it on an instagram account and use it anywhere a normal website url can be used.
     </p>
-  </div> -->
+    <p>
+      Also, there is no way to make this part free, website names are regulated and somebody has to pay for them. Right now GitHub is technically paying for your website name. But they don't mind, they're happy to have you on there.
+    </p>
+    <p>If you do want a custom website name it's worthy of seperate walkthrough but here's the short version:</p>
+    <ol>
+      <li>Purchase a domain name via a Web Registrar like Google Domains or Dreamhost</li>
+      <li>Create a file in your website's GitHub reposatory called "CNAME"</li>
+      <li>Paste a copy of the website url in this file (ie "myname.com")</li>
+      <li>On your Registrar's website, find the "DNS Settings" for your purchased site</li>
+      <li>Replace all the "top level records" with the following</li>
+    </ol>
+    <div class="code">
+      <div class="code-header">
+        DNS Configuration / Records
+      </div>
+      &nbsp;&nbsp;&nbsp;@ A 185.199.108.153<br>
+      &nbsp;&nbsp;&nbsp;@ A 185.199.109.153<br>
+      &nbsp;&nbsp;&nbsp;@ A 185.199.110.153<br>
+      &nbsp;&nbsp;&nbsp;@ A 185.199.111.153<br>
+      &nbsp;&nbsp;&nbsp;www CNAME your_github_username.github.io.<br>
+    </div>
+    <p>
+      This is tricky and it's different on different Registrars. On top of this any changes can take hours to update! Don't fear it, you can't really break anything and google / youtube are your friend if you hit a wall!
+    </p>
+  </div>
 </body>
 </html>
