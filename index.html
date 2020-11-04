@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>📄 Make a Free Art Website!</title>
+  <title>🌱 Make a Free Art Website!</title>
   <meta charset="UTF-8">
 </head>
 
@@ -39,10 +39,12 @@
   }
 
   img {
-    filter: invert(1);
+    /* filter: invert(1); */
+    filter: brightness(1) contrast(20) saturate(0);
     display: block;
     margin: auto;
     width: 80%;
+    border-radius: 50%;
   }
 
   h1, h2, h3 {
@@ -77,6 +79,14 @@
         color: white;
         padding: 25px;
       }
+  }
+
+  @media only screen and (max-width: 500px) {
+    img {
+      width: 110%;
+      border-radius: 0;
+      margin-left: -5%;
+    }
   }
 
   @media only print {
@@ -122,7 +132,8 @@
       make, host and maintain their own personal portfolio websites.
     </p>
     <br><br>
-    <img src="images/happy-desk.jpg" alt="">
+    <img src="images/photo.jpeg" alt="">
+    <!-- <img src="images/happy-desk.jpg" alt=""> -->
     <br>
     <p>
       Why make your own website? Maybe you don't want to pay for SquareSpace, maybe you don't like Instagram's algorithm,
@@ -198,9 +209,9 @@
   </div>
 
   <div>
-    <img src="images/happy-disks.jpg" alt="">
+    <!-- <img src="images/happy-disks.jpg" alt=""> -->
     <h2>
-      Step Four: Save the File!
+      Step Four: Save the File
     </h2>
     <p>
       When we want to save changes to a file on GitHub, we do something called <b>committing</b>. Just think of it as
@@ -214,7 +225,7 @@
 
   <div>
     <h2>
-      Step Five: Bring it to Life!
+      Step Five: Bring it to Life
     </h2>
     <p>
       Now let's make this a real life website! Go to the <b>settings</b> section of your project and find the <b>GitHub
@@ -227,7 +238,7 @@
       this on. The internet pipes can be slow and creaky. But after a few minutes it should work and now any committed
       updates you make should be pretty close to instantaneous.
     </p>
-    <img src="images/network.jpg" alt="">
+    <!-- <img src="images/network.jpg" alt=""> -->
     <p>
       In any case, congratulations! This is now your personal website! Anyone on the internet can access this url and it
       will update any time you save (commit) new images and text.
@@ -244,7 +255,7 @@
 
   <div>
     <h2>
-      Step Six: Add an Image File!
+      Step Six: Add an Image File
     </h2>
     <p>
       Now click around until you get back to the root page for our project (reposatory) where we can see a link to our
@@ -264,7 +275,7 @@
 
   <div>
     <h2>
-      Step Seven: Add the Image to Your Website!
+      Step Seven: Add the Image to Your Website
     </h2>
     <p>
       Now let's add a reference to that image to your actual website so it appears with your text.
@@ -333,11 +344,11 @@
     </p>
   </div>
 
-  <img src="images/folders.jpg">
+  <!-- <img src="images/folders.jpg"> -->
 
   <div>
     <h2>
-      Step Eight: Add a Second Page!
+      Step Eight: Add a Second Page
     </h2>
     <p>
       You may want to have seperate pages for your cv / resume or different bodies of work etc. To do this all you have to
@@ -394,7 +405,7 @@
 
   <div>
     <div>
-      <h2>Step Nine: Add a Link!</h2>
+      <h2>Step Nine: Add a Link</h2>
       <p>
         Now let's add a link on our <b>index.html</b> page that will go to the new page we just made. Go back to your main
         project page, click on <b>index.html</b> and update your HTML to look something like this:
@@ -475,11 +486,11 @@
     </p>
   </div>
 
-  <img src="images/paint.jpg">
+  <!-- <img src="images/paint.jpg"> -->
   
   <div>
     <h2>
-      Step Ten: Style it Up!
+      Step Ten: Style it Up
     </h2>
     <p>
       Before wrapping this little demo page let's add a little bit more CSS in the <b>style</b> section of our <b>index.html</b> and <b>second-page.html</b> pages. Check out how your page looks if you update your pages to look like this.
@@ -556,7 +567,7 @@
 
   <div>
     <h2>
-      Step Eleven: Go Nuts!
+      Step Eleven: Go Nuts
     </h2>
     <p>
       At this point you've built the major components you'll need for a fully functional gallery or artist's website. You can start playing around with adding new images, new pages and new links until it starts to look like a real website!
@@ -573,11 +584,11 @@
     </p>
   </div>
 
-  <img src="images/windows.jpg">
+  <!-- <img src="images/windows.jpg"> -->
 
   <div>
     <h2>
-      Step Twelve: Custom Website Names!
+      Step Twelve: Custom Website Names
     </h2>
     <p>
       Just to be clear this part is optional, you now have a fully working website. Your working website link is available in settings under the GitHub pages section. You can email this to people, link it on an instagram account and use it anywhere a normal website url can be used.
