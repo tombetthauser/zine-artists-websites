@@ -66,6 +66,33 @@
   .ending-text { text-align: center; }
   div { margin-bottom: 75px; }
 
+
+  hr.zig, hr.zag {
+    border: none;
+    height: 30px;
+    margin: 0;
+  }
+
+  hr.zig{
+    background: linear-gradient(-135deg, #000 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #000 20px, rgba(0, 0, 0, 0) 0) 0 5px;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 40px;
+    z-index: 100;
+    position: relative;
+  }
+
+  hr.zag {
+    background: linear-gradient(-135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #FFF 20px, #000 0) 0 5px;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 40px;
+    z-index: 50;
+    margin-top: -28px;
+  }
+
   @media only screen and (max-width: 750px) {
       body {
         background-color: black;
@@ -142,6 +169,8 @@
     </p>
     <p>In any case it's a fun empowering project to take on!</p>
   </div>
+
+  <hr class="zig"><hr class="zag"><br><br>
 
   <div>
     <h2>Step One: Make a GitHub Account</h2>
